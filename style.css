@@ -14,12 +14,31 @@ body {
 }
 
 .header {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
 }
 
 .header h1 {
     color: var(--accent-text-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header p {
+    margin-bottom: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 24px;
+    height: auto;
 }
 
 .project-container {
@@ -33,6 +52,7 @@ body {
     height: 100px;
     border: 2px solid var(--accent-text-color);
     border-radius: 0.4rem;
+    box-sizing: border-box;
 }
 
 @media (max-width: 500px) {
