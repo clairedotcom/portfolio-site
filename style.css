@@ -8,6 +8,10 @@ body {
     font-family: Inconsolata;
 }
 
+h3 {
+    color: var(--accent-text-color);
+}
+
 .content {
     margin: 3rem auto;
     max-width: 840px;
@@ -50,7 +54,8 @@ body {
 .project-card {
     width: 100%;
     height: 100px;
-    border: 2px solid var(--accent-text-color);
+    background-color: var(--accent-text-color);
+    opacity: 0.5;
     border-radius: 0.4rem;
     box-sizing: border-box;
 }
@@ -59,5 +64,11 @@ body {
     .project-container {
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 860px) {
+    .content {
+        margin: 3rem 1rem;
     }
 }
