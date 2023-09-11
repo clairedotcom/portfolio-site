@@ -51,6 +51,10 @@ a {
     height: auto;
 }
 
+.about, .content, .projects {
+    margin-bottom: 4rem;
+}
+
 .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -74,10 +78,24 @@ a {
 }
 
 .project-card h4 {
-    flex: auto;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 0;
     color: black;
+    font-weight: bold;
+}
+
+.project-text {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-text p {
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media (max-width: 500px) {
