@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --accent-text-color: rgb(129, 172, 114);
+    --accent-text-color: rgb(130, 172, 114);
+    --project-card-color: rgb(162, 200, 147);
     --accent-text-hover: rgb(198, 219, 194);
 }
 
 body {
-    font-family: Inconsolata;
+    font-family: Roboto;
 }
 
 h3 {
@@ -64,8 +65,7 @@ a {
 .project-card {
     width: 100%;
     height: 100px;
-    background-color: var(--accent-text-color);
-    opacity: 0.5;
+    background-color: var(--project-card-color);
     border-radius: 0.4rem;
     box-sizing: border-box;
     display: flex;
@@ -81,7 +81,7 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 0;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ a {
 }
 
 .project-text p {
-    color: black;
+    color: white;
     padding-left: 10px;
     padding-right: 10px;
 }
